@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: slateblue;
+}
+
+.nav-list li {
+    padding: 15px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #66ccff;
+}
+
+.nav-list li a button{
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.image-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+
+}
+
+.image-container img{
+    height: 400px;
+    width: 100%;
+    
+}
+
+.image-container::before{
+    content: "Welcome To MANUU";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:  #66ccff;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.border{
+    border: 2px solid black;
+    height: 600px;
+    width: 80%;
+    margin-left: 180px;
+    margin-top: 40px;
+    background-color: #66ccff;
+
+    
+}
+
+.div1{
+    border: 1px solid black;
+    height: 540px;
+    width: 23%;
+    margin-top: 10px;
+    margin-left: 17px;
+    float: left;
+}
+
+.div1 img{
+    height: 40%;
+    width: 100%;
+}
+
+.text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    text-overflow: clip;
+    padding: 0px 10px 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-size: large; */
+}
+
+.div2{
+    border: 1px solid black;
+    height: 540px;
+    width: 23%;
+    margin-top: 10px;
+    margin-left: 25px;
+    float: left;
+}
+
+.div3{
+    border: 1px solid black;
+    height: 540px;
+    width: 23%;
+    margin-top: 10px;
+    margin-left: 25px;
+    float: left;
+}
+
+.div4{
+    border: 1px solid black;
+    height: 540px;
+    width: 23%;
+    margin-top: 10px;
+    margin-left: 25px;
+    float: left;
+}
+
+.footer{
+    background-color: blue;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+
+/* -------------------------------------------------this is a media query---------------------------------------------------------*/
+/* Existing styles */
+
+@media screen and (max-width: 768px) {
+    /* Adjust the navigation bar for smaller screens */
+    .nav-list {
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    .nav-list li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-list li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Adjust the image container for smaller screens */
+    .image-container::before {
+        font-size: 40px;
+    }
+
+    /* Adjust the border and divs for smaller screens */
+    .border {
+        height: auto;
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .div1 {
+        height: auto;
+        width: 100%;
+        margin: 10px 0;
+        float: none;
+    }
+}
